@@ -1,15 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+
+//context
+import ShowsContext from '../context/shows/showsContext'
+
+//component
+import Alert from './Alert'
 
 const Searchbar = () => {
 
     const [searchTerm, setSearchTerm] = useState('')
+
+    const { searchShows } = useContext(ShowsContext)
+
     const onSearchHandler = (e) => {
         e.preventDefault()
-        console.log('search for term' + searchTerm)
+        searchShows(searchTerm)
     }
 
     return (
         <div className="searchbar">
+            <Alert message="Please enter something" type="danger" />
             <form className="searchbar__form">
                 <input
                     type="text"

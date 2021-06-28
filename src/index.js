@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+//state
+import ShowsContext from './context/shows/ShowsState'
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ShowsContext>
     <App />
-  </React.StrictMode>,
+  </ShowsContext>,
   document.getElementById('root')
 );
