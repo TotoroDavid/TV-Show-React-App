@@ -14,4 +14,4 @@ API Link:
 
 https://competent-villani-3bf4bc.netlify.app/
 
-<img src="">
+<img src="https://github.com/TotoroDavid/TV-Show-React-App/blob/master/Screen%20Shot%202021-06-28%20at%209.42.37%20am.png?raw=true">
